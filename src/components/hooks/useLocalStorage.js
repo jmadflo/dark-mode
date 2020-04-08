@@ -8,6 +8,7 @@ const useLocalStorage = (key, initialValue) => {
         const currentValue = localStorage.getItem(key)
         return currentValue ? JSON.parse(currentValue) : initialValue
     })
+
     //setter method
     const setValue = (value) => {
         setStoredValue(value)
